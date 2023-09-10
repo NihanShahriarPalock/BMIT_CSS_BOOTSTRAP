@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart Title</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="../css/cart.css" />
+  </head>
+  <body>
+    <section id="upper-box">
+      <div class="long-box mt-3">
+        <div class="long-box-left">
+          <span class="long-text">Share</span>
+
+          <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Pinterest"> <i class="fab fa-pinterest"></i></a>
+
+        </div>
+        <div class="long-box-right">
+          <div class="bookmark">
+            <i class="fas fa-bookmark"></i>
+            <span class="long-text">Save</span>
+          </div>
+
+          <div class="compare">
+            <i class="fas fa-not-equal"></i>
+            <span class="long-text">Add to Compare</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="img-text-specification">
+      <div class="cart-img-text m-3">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="cart-img">
+              
+
+              <div class="img-group">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn"></span>
+                <img id="expandedImg" style="width:100%">
+                <div id="imgtext"></div>
+              </div>
+
+              <div class="img-row">
+                <div class="columnn">
+                  <img
+                    src="../images/group-1.jpg"
+                    alt=""
+                    style="width: 100%"
+                    onclick="myFunction(this);"
+                  />
+                </div>
+                <div class="columnn">
+                  <img
+                    src="../images/group-2.jpg"
+                    alt=""
+                    style="width: 100%"
+                    onclick="myFunction(this);"
+                  />
+                </div>
+                <div class="columnn">
+                  <img
+                    src="../images/group-3.jpg"
+                    alt=""
+                    style="width: 100%"
+                    onclick="myFunction(this);"
+                  />
+                </div>
+                <div class="columnn">
+                  <img
+                    src="../images/group-4.jpg"
+                    alt=""
+                    style="width: 100%"
+                    onclick="myFunction(this);"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4">
+            <div class="cart-text text-start">
+              <h5 class="pd-name">AMD Ryzen 5 5500 Gaming Desktop PC</h5>
+              <div>
+                <div class="row">
+                  <p class="product-info sm-font">
+                    <span class="pd-info-list">Price:</span>
+                    <span class="text-bold"> 29,699৳ </span
+                    ><span class="pd-info-list"><del>30,800৳</del></span>
+                  </p>
+                  <p class="product-info sm-font">
+                    <span class="pd-info-list">Regular Price:</span
+                    ><span class="text-bold">33,880৳</span>
+                  </p>
+                  <p class="product-info sm-font">
+                    <span class="pd-info-list">Status:</span
+                    ><span class="text-bold">In Stock</span>
+                  </p>
+                  <p class="product-info sm-font">
+                    <span class="pd-info-list">Product Code:</span
+                    ><span class="text-bold">30130</span>
+                  </p>
+                </div>
+
+                <div class="row">
+                  <p class="product-info sm-font">
+                    <span class="pd-info-list">Band:</span
+                    ><span class="text-bold">AMD</span>
+                  </p>
+                </div>
+              </div>
+              <p class="mt-3">Key Features</p>
+              <div>
+                <p class="key-feature-txt">
+                  Model: Ryzen 5 5500 Gaming Desktop PC <br />
+                  AMD Ryzen 5 5500 Processor<br />
+                  BIOSTAR A520MH MICRO ATX AMD AM4 MOTHERBOARD<br />
+                  Team Elite Plus Red 8GB RAM + HP EX900 M.2 250GB PCIe NVMe
+                  SSD<br />
+                  Colorful GeForce GT710-2GD3-V 2GB Graphics Card
+                </p>
+              </div>
+
+              <div>
+                <a class="view-info" href="#">View More Info</a>
+              </div>
+              <div class="pay-opt mt-3 mb-2">Payment Options</div>
+
+              <div class="radio-payment">
+                <form>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div>
+                        <label class="pay-option-radio active-box">
+                          <input type="radio" name="plan" checked />
+                          <span class="plan-details">
+                            <span
+                              ><h5 class="text-bold">
+                                29,699৳ <del>30,800৳</del>
+                              </h5></span
+                            >
+                            <span>Cash Discount Price</span><br />
+                            <span>Online / Cash Payment</span>
+                          </span>
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <div>
+                        <label class="pay-option-radio">
+                          <input type="radio" name="plan" />
+                          <span class="plan-details">
+                            <span><h5 class="text-bold">2,823৳/month</h5></span>
+                            <span>Regular Price: 33,880৳</span><br />
+                            <span>0% EMI for up to 12 Months***</span>
+                          </span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              <div class="mt-5">
+                <div class="increase">
+                  <table>
+                    <tr>
+                      <td>-</td>
+                      <td>2</td>
+                      <td>+</td>
+                      <td class="blank"></td>
+
+                      <td>
+                        <button class="buy-now text-bold">Buy Now</button>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="details">
+      <div class="spec">
+        <div class="row">
+          <div class="col-lg-10">
+            <div class="middle-body">
+              <div class="details-spec-border">
+                <h2 class="text-bold mb-2"><i><u>Specification</u></i></h2>
+  
+               
+  
+                <div class="specification">
+                  <table class="table table-hover m-5">
+                    <tr>
+                      <td class="font-unclear">Processor</td>
+                      <td>
+                        AMD Ryzen 5 5500 Processor <br />
+                        3 Years Warranty (No Warranty for Fan or Cooler)
+                      </td>
+                    </tr>
+  
+                    <tr>
+                      <td class="font-unclear">Motherboard</td>
+                      <td>
+                        BIOSTAR A520MH MICRO ATX AMD AM4 MOTHERBOARD <br />
+                        3 Years Warranty
+                      </td>
+                    </tr>
+  
+                    <tr>
+                      <td class="font-unclear">RAM</td>
+                      <td>
+                        Team Elite Plus Red 8GB 3200MHz DDR4 U-DIMM Desktop RAM
+                        <br />
+                        Lifetime Warranty
+                      </td>
+                    </tr>
+  
+                    <tr>
+                      <td class="font-unclear">Graphics Card</td>
+                      <td>
+                        Colorful GeForce GT710-2GD3-V 2GB Graphics Card <br />
+                        2 Years Warranty
+                      </td>
+                    </tr>
+  
+                    <tr>
+                      <td class="font-unclear">Storage</td>
+                      <td>
+                        HP EX900 M.2 250GB PCIe NVMe Internal SSD <br />
+                        3 Years Warranty
+                      </td>
+                    </tr>
+  
+                    <tr>
+                      <td class="font-unclear">Casing</td>
+                      <td>
+                        Value-Top VT-B700 Mini Tower Micro-ATX Gaming Case <br />
+                        No Warranty
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="description">
+      <div class="description">
+        <div class="row mt-5">
+          <div class="col-lg-10 description-box">
+            <h2 class="text-bold"><i><u>Description</u></i></h2>
+            <div class="ms-5 mt-5">
+
+              <h3 class="text-bold mt-3">AMD Ryzen 5 5500 Gaming Desktop PC</h3>
+              <span class="description-text ">
+                The AMD Ryzen 5 5500 Gaming Desktop PC is a powerful setup
+                catering to gaming enthusiasts. It features the AMD Ryzen 5 5500
+                Processor for impressive gaming performance and multitasking
+                capabilities. Paired with the BIOSTAR A520MH MICRO ATX AMD AM4
+                MOTHERBOARD, the PC offers a stable and efficient platform. With
+                8GB of Team Elite Plus Red 3200MHz DDR4 U-DIMM Desktop RAM, the PC
+                ensures smooth multitasking and a responsive gaming experience.
+                The HP EX900 M.2 250GB PCIe NVMe Internal SSD provides fast
+                storage access, resulting in reduced loading times for games and
+                applications. The Colorful GeForce GT710-2GD3-V 2GB Graphics Card
+                enhances gaming visuals, delivering a satisfactory gaming
+                experience in less demanding titles. Housed in the Value-Top
+                VT-B700 Mini Tower Micro-ATX Gaming Case, this AMD Ryzen 5 5500
+                Gaming Desktop PC offers both performance and convenience for an
+                immersive gaming setup. <br /><br />
+                <span class="text-bold">For More Details Please Visit:</span>
+                <br />
+                <span
+                  ><a class="description-link" href="#"
+                    >AMD Ryzen 5 5500 Processor</a
+                  ></span
+                >
+                <br />
+                <span
+                  ><a class="description-link" href="#"
+                    >BIOSTAR A520MH MICRO ATX AMD AM4 MOTHERBOARD</a
+                  ></span
+                ><br />
+                <span
+                  ><a class="description-link" href="#"
+                    >Team Elite Plus Red 8GB 3200MHz DDR4 U-DIMM Desktop RAM</a
+                  ></span
+                ><br />
+                <span
+                  ><a class="description-link" href="#"
+                    >HP EX900 M.2 250GB PCIe NVMe Internal SSD</a
+                  ></span
+                >
+                <br />
+                <span
+                  ><a class="description-link" href="#"
+                    >Colorful GeForce GT710-2GD3-V 2GB Graphics Card</a
+                  ></span
+                >
+                <br />
+                <span
+                  ><a class="description-link" href="#"
+                    >Value-Top VT-B700 Mini Tower Micro-ATX Gaming Case</a
+                  ></span
+                >
+              </span>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="compare-cart">
+      <div class="compare-cart">
+        <div class="cart-icon">
+          <span class="badge">3</span>
+          <i class="fas fa-cart-plus"><br />Cart</i>
+        </div>
+
+        <div class="compare-icon">
+          <span class="badge">0</span>
+          <i class="fas fa-not-equal"><br />Compare</i>
+        </div>
+      </div>
+    </section>
+
+
+    <button class="open-button" onclick="openForm()">Chat</button>
+    <div class="chat-popup" id="myForm">
+   <form action="" class="form-container">
+     <label for="msg"><b>Message Box</b></label>
+     <textarea placeholder="Tell us your message.." name="msg"></textarea>
+     <button type="submit" class="btn">Send</button>
+     <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+    <script src="../javascript/cart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
